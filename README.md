@@ -2,7 +2,7 @@
 
 A minimal TCP **reverse shell** written in C for POSIX systems (macOS/Linux), built as a learning exercise in network and systems programming. When run, the program opens a TCP connection *back* to a listener you control, wires an interactive `/bin/sh` to that connection, and lets you run commands over the socket. The outbound connection is what makes it a *reverse* shell (as opposed to a bind shell that waits for an incoming connection).
 
-> ⚠️ **For education and authorized testing only.** Use this only on systems you own or have explicit, written permission to test. Running a reverse shell against machines you don't control is illegal in most jurisdictions. You are responsible for how you use it.
+> **For education and authorized testing only.** Use this only on systems you own or have explicit, written permission to test. Running a reverse shell against machines you don't control is illegal in most jurisdictions. You are responsible for how you use it.
 
 ## How it works
 The program does five things:
